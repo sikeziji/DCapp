@@ -1,7 +1,6 @@
 package com.example.dcapp.http.impl;
 
 import com.example.dcapp.http.IResponse;
-
 public class BaseResponse implements IResponse {
 
     //设置状态值
@@ -33,4 +32,5 @@ public class BaseResponse implements IResponse {
     public void setData(String data) {
         this.data = data;
     }
+
 }

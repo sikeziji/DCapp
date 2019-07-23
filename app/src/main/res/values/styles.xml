@@ -8,4 +8,76 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="Dialog.Title">
+        <item name="android:textColor">@color/color_text_dark</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="Dialog.Input">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColorHint">@color/text_gray</item>
+
+    </style>
+
+    <style name="Dialog.InputWrapper">
+        <item name="android:background">@drawable/input_bottom_line</item>
+    </style>
+
+    <style name="Dialog.Button">
+        <item name="android:background">@drawable/btn_bg_selector</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="Error">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/error_red</item>
+    </style>
+
+    <style name="Loading"></style>
+
+    <style name="Tips"></style>
+
+
+    <style name="Dialog" parent="Theme.AppCompat.Dialog">
+        <!--背景颜色-->
+        <item name="android:colorBackground">?attr/colorBackgroundFloating</item>
+
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!--窗口-->
+        <item name="android:windowFrame">@null</item>
+        <!--窗口标题样式-->
+        <item name="android:windowTitleStyle">
+            @style/RtlOverlay.DialogWindowTitle.AppCompat
+        </item>
+        <!--窗口标题背景样式-->
+        <item name="android:windowTitleBackgroundStyle">
+            @style/Base.DialogWindowTitleBackground.AppCompat
+        </item>
+        <!--窗口背景-->
+        <item name="android:windowBackground">
+            @drawable/abc_dialog_material_background
+        </item>
+        <!--窗口是否漂浮-->
+        <item name="android:windowIsFloating">
+            true
+        </item>
+        <!--背景选中-->
+        <item name="android:backgroundDimEnabled">
+            true
+        </item>
+        <!--窗口动画样式-->
+        <item name="android:windowAnimationStyle">
+            @style/Animation.AppCompat.Dialog
+        </item>
+
+        <!--窗口软键盘焦点模式-->
+        <item name="android:windowSoftInputMode">
+            stateUnspecified|adjustPan
+        </item>
+
+
+    </style>
+
 </resources>

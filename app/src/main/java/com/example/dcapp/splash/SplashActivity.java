@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            final AnimatedVectorDrawable anim1 = (AnimatedVectorDrawable) getResources().getDrawable(R.drawable.anim);
+            final AnimatedVectorDrawable anim1 = (AnimatedVectorDrawable) this.getResources().getDrawable(R.drawable.anim);
             final ImageView logo = ((ImageView) findViewById(R.id.logo));
             logo.setImageDrawable(anim1);
             anim1.start();
