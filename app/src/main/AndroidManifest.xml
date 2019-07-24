@@ -21,9 +21,9 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:name=".MyTaxiApplication"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Base.AppTheme">
         <activity android:name=".splash.SplashActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="portrait"
             >
             <intent-filter>
@@ -35,10 +35,14 @@
         </activity>
 
         <activity android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             >
-
         </activity>
+        <activity android:name=".materiallogin.AActivityOne"/>
+        <activity
+            android:name=".materiallogin.AActivityTwo"
+            android:theme="@style/Translucent" />
+        <activity android:name=".materiallogin.AActivityThree" />
     </application>
 
 </manifest>

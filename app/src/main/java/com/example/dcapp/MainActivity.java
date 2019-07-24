@@ -1,17 +1,11 @@
 package com.example.dcapp;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Dialog;
-import android.os.Bundle;
-import android.widget.Toast;
-
-import com.example.dcapp.account.view.LoginDialog;
-import com.example.dcapp.http.IResponse;
-import com.example.dcapp.http.impl.BaseRequest;
-import com.example.dcapp.http.impl.OkHttpClientImpl;
-
-import okhttp3.Request;
+import com.example.dcapp.materiallogin.AActivityOne;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
 //        System.out.println("iResponse = " + iResponse.toString());
 //
 
-        new LoginDialog(this,"15138963060").show();
+        Intent intent = new Intent(this,AActivityOne.class);
+        startActivity(intent);
 
     }
 }
